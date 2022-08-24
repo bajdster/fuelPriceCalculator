@@ -1,0 +1,187 @@
+html
+{
+    width:100vw;
+    height: 100vh;
+}
+body
+{
+    background: url("cloud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+#fuelChoose
+{
+    width:60%;
+    height: 30%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.fuelType
+{
+    height:100%;
+    width:18%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.fuelType:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fuelType img
+{
+    width:80%;
+    height: 80%;
+}
+.active
+{
+    background-color: rgb(129, 153, 205);
+    border-bottom: 4px solid rgb(17, 28, 61);
+    color:aliceblue;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+container
+{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#counterBox
+{
+    width:50%;
+    height:50%;
+    background-color:rgba(0, 0, 0, 0.338);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px black;
+    /* margin-top:20px; */
+    margin-left:150px
+
+}
+
+.middleBox
+{
+    display:flex;
+    justify-content: space-evenly;
+    width:80%;
+}
+#fuelForm
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Geostar Fill', cursive;
+}
+label
+{
+    width:70%;
+    height: 70%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.504);
+    color: wheat;
+    padding: 10px;
+}
+input
+{
+    width:25%;
+    background-color: rgb(218, 195, 195);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#result
+{
+    width:15%;
+    height:8%;
+    background-color: rgba(0, 0, 0, 0.504);
+    color:white;
+    backdrop-filter: blur(3px);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+#countButton
+{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top:10px;
+    background: rgb(158, 29, 29);
+    border: 5px double #fffbfb;
+    color: rgb(224, 206, 206);
+}
+#countButton:active
+{
+    background-color: rgb(235, 36, 36);
+}
+#countButton:hover
+{
+    box-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px)
+{
+    #counterBox
+    {
+        margin:0;
+        width:100%;
+    }
+    #fuelChoose
+    {
+        width:80%;
+    }
+    .fuelType
+    {
+        width:10%;
+    }
+}
+@media only screen and (max-width:800px) {
+    #fuelChoose
+    {
+        width:90%;
+    }
+    .fuelType
+    {
+        width:20%;
+    }
+    label
+    {
+        font-size: 14px;
+        width:90%;
+    }
+}

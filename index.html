@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fuel calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <container>
+  
+    <main id="counterBox">
+
+      <aside id ="fuelChoose">
+        <div class = "fuelType"><img src="pb95.png">6.49zł</div>
+        <div class = "fuelType"><img src="pb98.png">7.05zł</div>
+        <div class = "fuelType"><img src="on.png">7.04zł</div>
+        <div class = "fuelType"><img src="oil.png">7.30zł</div>
+        <div class = "fuelType"><img src="gaz.png">3.13zł</div>
+  
+      </aside>
+
+      <div class = 'middleBox'>
+        <form id ="fuelForm">
+          <!-- <label for="fuels">Wybierz rodzaj paliwa
+          <select id="fuels">
+            <option value="95">95 6.49zł</option>
+            <option value ="98">98 7.05zł</option>
+            <option value ="ON">ON 7.04zł</option>
+            <option value ="ON+">ON+ 7.30zł</option>
+            <option value = "LPG">LPG 3.13zł</option>
+          </select>
+        </label> -->
+        
+          <label for="kilemeters">Liczba kilometrów
+          <input type="number" id = "kilometers" min="0" max="10000" placeholder="km">
+        </label>
+
+          <label for="consumption">Średnie spalanie(/100h) 
+          <input type="number" id = "consumption" step ="0.1" min="0" max="50" placeholder="Spalanie">
+        </label>
+
+        </form>
+      
+      <button id="countButton">Oblicz</button>
+    </div>
+
+      <div id="result"></div>
+    </main>
+
+    
+  </container>
+
+
+<script src = "app.js"></script>
+
+</body>
+
+</html>
